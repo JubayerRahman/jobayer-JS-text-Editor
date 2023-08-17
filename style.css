@@ -1,0 +1,112 @@
+body{
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center;
+    background-color: #3AAFA9;
+    color: #17242A;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.editor{
+    border: #17242A 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.buttonSet{
+    border-bottom: 2px solid black;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; justify-content:space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.fontStyles,.alignments, .colors{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+button{
+    cursor: pointer;
+    font-size: 20px;
+    /* padding: 5px; */
+    background-color: #3AAFA9;
+    border: none;
+    border-bottom: 4px solid #3AAFA9;
+    transition: all 0.2s ease;
+}
+button:hover{
+    color: white;
+    border-bottom: 4px solid black;
+}
+#sizeButton{
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 5vw;
+    text-align: center;
+    border-right: 2px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+}
+#fontColor{
+    border: 2px;
+    outline: none;
+}
+#wordCountp{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+textarea{
+    max-width: 90vw;
+    width: 90vw;
+    height: 70vh;
+    outline: none;
+    padding: 5px;
+    font-weight: normal;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#download{
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+#download:hover{
+    border-bottom: none;
+}
+.reminder{
+    font-weight: bold;
+    color: red;
+}
+.cradit{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    #sizeButton{
+        width: 10vw;
+    }
+    .buttonSet{
+        align-items: center;
+    }
+    .reminder{
+        font-size: 10px;
+        font-weight: bold;
+        color: red;
+    }
+    .cradit{
+        font-size: 20px;
+    }
+}

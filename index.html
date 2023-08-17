@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./FontsInport.css">
+    <title>Text Editor- Jobayer Rahman</title>
+</head>
+<body>
+    <h1>Jobayer JS text Editor</h1>
+    <div class="editor">
+        <div class="buttonSet">
+            <div class="fontStyles">
+                <input  id="sizeButton" type="number" min="5" placeholder="16" value="16">
+                <button id="boldButton"><i class="fa-solid fa-bold"></i></button>
+                <button id="italic"><i class="fa-solid fa-italic"></i></button>
+                <button id="underLine"><i class="fa-solid fa-underline"></i></button>
+                <select id="fontFamily">
+                    <option value="Ubuntu" id="Ubuntu">Ubuntu</option>
+                    <option value="Raleway" id="Raleway">Raleway</option>
+                    <option value="Kurale" id="Kurale">Kurale</option>
+                    <option value="Bricolage Grotesque" id="Bricolage">Bricolage Grotesque</option>
+                    <option value="Lato" id="Lato">Lato</option>
+                    <option value="Montserrat" id="Montserrat">Montserrat</option>
+                    <option value="Open Sans" id="Open">Open Sans</option>
+                    <option value="Poppins" id="Poppins">Poppins</option>
+                    <option value="Source Code Pro" id="Source">Source Code Pro</option>
+                </select>
+            </div>
+            <div class="alignments">
+                <button id="alignLeft"><i class="fa-solid fa-align-left"></i></button>
+                <button id="alignCenter"><i class="fa-solid fa-align-center"></i></button>
+                <button id="alignRight"><i class="fa-solid fa-align-right"></i></button>
+                <button id="alignJustify"><i class="fa-solid fa-align-justify"></i></button>
+            </div>
+            <div class="colors">
+                <label for="fontColor">Font Color:</label>
+                <input id="fontColor" type="color">
+                <label for="bgColor">BG Color:</label>
+                <input id="bgColor" type="color">
+            </div>
+            <p id="wordCountp">0 Words</p>
+        </div>
+        <textarea id="textarea" name="" id="" cols="" rows="" placeholder="type text"></textarea>
+    </div>
+    <button id="download"><i class="fa-solid fa-download"></i></button>
+    <p class="reminder">(This Download Button is stupid If you can just ignore it.)</p>
+    <p class="cradit">Developed by <a href="https://allmyprojects-jobayer.netlify.app/" target="_blank"> Jobayer Rahman </a></p>
+    <script src="./app.js"></script>
+    <!-- font Awsome -->
+    <script src="https://kit.fontawesome.com/c74447f892.js" crossorigin="anonymous"></script>
+</body>
+</html>
